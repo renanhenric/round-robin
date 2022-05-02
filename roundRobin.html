@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+
+<table style="width:300" border="1px solid black">
+  <tr>
+    <th>Process</th>
+    <th>Burst Time</th>
+    <th>Burst Time Input</th>
+  </tr>
+  <tr style="text-align:center">
+    <td>Process 1</td>
+    <td id="p1BurstTime"></td>
+    <td><input type="text" id="inputP1" style="width:30px"></td>
+  </tr>
+
+  <tr style="text-align:center">
+    <td>Process 2</td>
+    <td id="p2BurstTime"></td>
+    <td><input type="text" id="inputP2" style="width:30px"></td>
+  </tr>
+
+  <tr style="text-align:center">
+    <td>Process 3</td>
+    <td id="p3BurstTime"></td>
+    <td><input type="text" id="inputP3" style="width:30px"></td>
+  </tr>
+
+  <tr style="text-align:center">
+    <td>Process 4</td>
+    <td id="p4BurstTime"></td>
+    <td><input type="text" id="inputP4" style="width:30px"></td>
+  </tr>
+
+  <tr style="text-align:center">
+    <td>Process 5</td>
+    <td id="p5BurstTime"></td>
+    <td><input type="text" id="inputP5" style="width:30px"></td>
+  </tr>
+</table>
+
+<h5>Quantum input: <input type="text" id="quantumInput" style="width:30px"></h5>
+<h5 id="quantumValue">Quantum: </h5>
+
+<h3>Process 1</h3>
+<canvas id="p1" width = "506" height = "42" style="border:2px solid #000000;"></canvas>
+<br>
+<h3>Process 2</h3>
+<canvas id="p2" width = "506" height = "42" style="border:2px solid #000000;"></canvas>
+<br>
+<h3>Process 3</h3>
+<canvas id="p3" width = "506" height = "42" style="border:2px solid #000000;"></canvas>
+<br>
+<h3>Process 4</h3>
+<canvas id="p4" width = "506" height = "42" style="border:2px solid #000000;"></canvas>
+<br>
+<h3>Process 5</h3>
+<canvas id="p5" width = "506" height = "42" style="border:2px solid #000000;"></canvas>
+<br>
+<br>
+<br>
+<button onclick="startRobin()">Começar execução</button>
+<!--<button onclick="randomize()">Random</button>-->
+
+
+<script type="text/javascript" src="index.js"></script>
